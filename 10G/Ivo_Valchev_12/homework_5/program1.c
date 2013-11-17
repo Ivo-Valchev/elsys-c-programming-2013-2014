@@ -47,7 +47,6 @@ int main()
             }
         }
     }
-    printf("RESULT:");
 
     for(i=0; i<13; i++){
         switch(sortArr[i]){
