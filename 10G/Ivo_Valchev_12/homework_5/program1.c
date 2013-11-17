@@ -8,29 +8,6 @@ int main()
     int sortArr[13];
     int i,j;
 
-    /*for(i=0; i<13; i++){
-        switch(arr[i]){
-        case 'T':
-                sortArr[i]=10;
-                break;
-        case 'J':
-                sortArr[i]=11;
-                break;
-        case 'Q':
-                sortArr[i]=12;
-                break;
-        case 'K':
-                sortArr[i]=13;
-                break;
-        case 'A':
-                sortArr[i]=14;
-                break;
-        default:
-                sortArr[i]=(int)arr[i];
-                break;
-        }
-    } */
-
     for(i=0; i<13; i++){
         char a = arr[i];
         if(a=='T')
