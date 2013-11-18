@@ -3,5 +3,5 @@
 
 int main()
 {
-    if(printf("Hello world!")){}
+    if(printf("Hello world")){}
 }
