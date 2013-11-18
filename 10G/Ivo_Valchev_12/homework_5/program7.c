@@ -34,10 +34,17 @@ int main()
            printf("error");
            return 0;
        }
-    if(n==10){
-        printf("deset");
+    if(n>9 && n<13){
+        switch(n){
+        case 10: printf("deset");
+                 break;
+        case 11: printf("edinadeset");
+                 break;
+        case 12: printf("dvanadeset");
+                 break;
+        }
         return 0;
-    }else if(n>10 && n<20){
+    }else if(n>12 && n<20){
         char* str = word(n%10);
         printf("%snadeset",str);
     }else if(n<10)
@@ -48,14 +55,19 @@ int main()
         if(n%10==0)
         {
             n/=10;
+            if(n==2) printf("dvadeset");
+            else{
             char* str = word(n);
             printf("%sdeset",str);
+            }
         }else
         {
             char *str = word(n%10);
             n/=10;
+
             char *str2 = word(n%10);
-            printf("%sdeset i %s",str2,str);
+            if(n==2){printf("dvadeset i %s",str);}
+            else {printf("%sdeset i %s",str2,str);}
         }
     }
     return 0;
